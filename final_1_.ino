@@ -34,9 +34,7 @@ void loop() {
   //a şıkkı//
   
   if ((millis() - waitA >= 3000) && digitalRead(buton) == HIGH) {
-  
     digitalWrite(a, HIGH);
-  
   }else if(digitalRead(buton)== LOW){
     waitA = millis();
     digitalWrite(a, LOW);

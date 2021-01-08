@@ -84,6 +84,5 @@ void loop()
     lcd.setCursor(10,0);
     lcd.print("YerYOK");
     lcd.setCursor(16,0);
-    
    }
 }

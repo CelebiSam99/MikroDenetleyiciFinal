@@ -1,6 +1,7 @@
 # MikroDenetleyiciFinal
 
-### 1.	tinkerCAD yazılımda 1 buton kullanarak 4 farklı çıkışı çalıştırınız (simülasyon yaparak her adımı ve  anlatınız), 
+### 1.	tinkerCAD yazılımda 1 buton kullanarak 4 farklı çıkışı çalıştırınız (simülasyon yaparak her adımı ve  anlatınız)
+[Tinkercad](https://www.tinkercad.com/things/hbXhWg57xYd-final-1-/editel?sharecode=Pf7I4IHb57vft3oGhBaB1FVLpQpCx4IAjfPrnBCNLy8)
 - 1. Çıkış, giriş sinyali açıldıktan 3 sn sonra aktif olacak ve giriş 1 kapanınca hemen kapanacak  
 - 2. Çıkış, giriş aktif olunca hemen çalışacak, giriş sinyali 0 olduktan 5 sn sonra kapanacak 
 - 3. Çıkış giriş sinyali aktif olduktan sonra hemen açılacak ve giriş sinyali kapanınca hemen kapanacak ama asla kesintisiz max çalışma süresi hiçbir zaman 10 sn yi geçemeyecek

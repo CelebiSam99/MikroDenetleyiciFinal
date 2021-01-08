@@ -58,20 +58,12 @@ void loop() {
     digitalWrite(c,LOW);
     waitC = millis();
   }
-    
+     //d şıkkı//
   if(millis() - waitD >= 10000 && digitalRead(buton) == LOW){
     digitalWrite(d, LOW);
   }else if(digitalRead(buton) == HIGH){
     digitalWrite(d, HIGH);
-    waitD = millis();}
-  //d şıkkı//
-
-  /*if(digitalRead(buton) == HIGH ){
-    digitalWrite(d,HIGH);
-  }else if(millis() - waitD == 10000){
-    digitalWrite(d,LOW);
-  	waitD = millis(); 
-  }*/
-  
+    waitD = millis();
+  }
   Serial.println(millis());
 } 

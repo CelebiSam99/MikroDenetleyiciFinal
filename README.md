@@ -10,6 +10,7 @@
 - 4. Çıkış giriş sinyali aktif olduktan sonra hemen aktif olacak ve sabit 10 sn çalışacak ve kapanacak  
 
 ### 2.	tinkerCAD yazılımda 2 input kullanarak 2 farklı çıkışı çalıştırınız (simülasyon yaparak her adımı ve parametre ayarlamalarını anlatınız), 
+![Şema](https://github.com/CelebiSam99/MikroDenetleyiciFinal/blob/main/Final-2.png)
 - 1. Çıkış, giriş sinyali ile aktif olacak, giriş sinyali düştükten 20 sn sonra kapanacak ve kapanmadan 5 sn önce 1 sn lik uyarma yapacak
 - 2. Çıkış, giriş sinyali ile aktif olacak, giriş sinyali 3 sn den önce düşerse çıkış 20 sn sonra kapanacak ve kapanmadan 5 sn önce 1 sn lik sön-yan uyarma yapacak. Ancak giriş sinyali 3 sn den fazla aktif kalırsa çıkışı düşürmek için giriş 2 den 1 sinyali gönderilecek
 

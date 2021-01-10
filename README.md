@@ -15,6 +15,7 @@
 
 ### 3.	Bir otoparkta giren ve çıkan araçları sayacak gerçek bir arduino devresi tasarlayınız. Sensör yerine buton kullanabilirsiniz. Çıkışları da LED ile gösteriniz
 [YOUTUBE]()
+![Şema](https://github.com/CelebiSam99/MikroDenetleyiciFinal/blob/main/Final-3-_bb.jpg)
 - A ve B sensörleri garajın giriş ve çıkışlarına konumlandırılmıştır. 
 - Girişten araç girerken I1e bağlı A sensörü aktif sinyal, çıkıştan araç çıkarken de I2ye bağlı B sensörü aktif sinyal göndermektedir. 
 - Garajın girişine 3 farklı uyarı lambası yerleştirilmiş. İçerdeki araçların adedi 15in altında ise Q1e bağlı yeşil YER VAR lambası, 15e ulaşınca Q2ye bağlı turuncu SIKIŞIK lambası, 20ye ulaşınca Q3e bağlı kırmızı DOLU yanmaktadır. 

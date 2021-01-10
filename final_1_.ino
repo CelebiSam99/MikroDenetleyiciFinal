@@ -5,13 +5,10 @@ const int d=5;
 int buton = 7;
   
 int timeA = 0;
-int waitA = 0;
 int timeB = 0;
-int waitB = 0;
 int timeC = 0;
-int waitC = 0;
 int timeD = 0;
-int waitD = 0;
+
 int butondeger = 0;
 
 void setup() {
@@ -30,7 +27,7 @@ void loop() {
 
   butondeger = digitalRead(buton);
   Serial.println(butondeger);
-    
+  Serial.println(millis());
   //a şıkkı//
   
   if ((millis() - waitA >= 3000) && digitalRead(buton) == HIGH) {
@@ -63,5 +60,5 @@ void loop() {
     digitalWrite(d, HIGH);
     waitD = millis();
   }
-  Serial.println(millis());
+
 } 

@@ -30,35 +30,35 @@ void loop() {
   Serial.println(millis());
   //a şıkkı//
   
-  if ((millis() - waitA >= 3000) && digitalRead(buton) == HIGH) {
+  if ((millis() - timeA >= 3000) && digitalRead(buton) == HIGH) {
     digitalWrite(a, HIGH);
   }else if(digitalRead(buton)== LOW){
-    waitA = millis();
+    timeA = millis();
     digitalWrite(a, LOW);
   
   }
   //b şıkkı//
-  if(millis() - waitB >= 5000 && digitalRead(buton) == LOW){
+  if(millis() - timeB >= 5000 && digitalRead(buton) == LOW){
     digitalWrite(b, LOW);
   }else if(digitalRead(buton) == HIGH){
     digitalWrite(b, HIGH);
-    waitB = millis();
+    timeB = millis();
   }
   //c şıkkı//
-  if(digitalRead(buton) == HIGH && millis() - waitC <= 10000){
+  if(digitalRead(buton) == HIGH && millis() - timeC <= 10000){
   	digitalWrite(c,HIGH);
-  }else if(HIGH && millis() - waitC > 10000){
+  }else if(HIGH && millis() - timeC > 10000){
     digitalWrite(c,LOW);
   }else if(digitalRead(buton) == LOW){
     digitalWrite(c,LOW);
-    waitC = millis();
+    timeC = millis();
   }
      //d şıkkı//
-  if(millis() - waitD >= 10000 && digitalRead(buton) == LOW){
+  if(millis() - timeD >= 10000 && digitalRead(buton) == LOW){
     digitalWrite(d, LOW);
   }else if(digitalRead(buton) == HIGH){
     digitalWrite(d, HIGH);
-    waitD = millis();
+    timeD = millis();
   }
 
 } 

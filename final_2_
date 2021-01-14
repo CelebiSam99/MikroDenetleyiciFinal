@@ -1,0 +1,70 @@
+const int a = 6;
+const int b = 7;
+
+const int buton1 = 2;
+const int buton2 = 3;
+
+int timeA = 0;
+int timeB = 0;
+
+int butondeger1 = 0;
+int butondeger2 = 0;
+
+void setup() {
+
+  Serial.begin(9600);
+  
+  pinMode(buton1, INPUT_PULLUP);
+  pinMode(buton2, INPUT_PULLUP);
+  
+  pinMode(a, OUTPUT);
+  pinMode(b, OUTPUT);
+
+}
+
+void loop() {
+  butondeger1 = digitalRead(buton1);
+  butondeger2 = digitalRead(buton2);
+  Serial.println("-----------------------");
+  Serial.print("Buton 1 :");
+  Serial.println(butondeger1);
+  Serial.print("Buton 2 :");
+  Serial.println(butondeger2);
+  Serial.print("Millis :");
+  Serial.println(millis());
+  Serial.print("TIME A :");
+  Serial.println(timeA);
+  Serial.print("TIME B :");
+  Serial.println(timeB);
+  Serial.println("-----------------------");
+  
+  
+  
+  //a şıkkı//
+  if (digitalRead(buton1)==HIGH){
+  	digitalWrite(a,HIGH);
+    timeA=millis();
+  }else if (millis() -timeA>=15000 &&millis() -timeA <=17000){
+  		digitalWrite(a,LOW);
+    	delay(1000);
+    	digitalWrite(a,HIGH);
+  }else if(millis() -timeA >20000){
+  	digitalWrite(a,LOW);
+  }
+  //b şıkkı//
+  if(millis()- timeB <=3000 && digitalRead(buton1)==HIGH){
+  	digitalWrite(b,HIGH);
+    timeB=millis();
+  }if (millis() -timeB>=15000 &&millis() -timeB <=17000){
+  		digitalWrite(b,LOW);
+    	delay(1000);
+    	digitalWrite(b,HIGH);
+  }else if(millis() -timeB >20000){
+  	digitalWrite(b,LOW);
+  }
+  else if(timeB>=3000){
+    if (digitalRead(buton2)==HIGH){
+    	digitalWrite(b,LOW);
+    }
+  }  
+}
